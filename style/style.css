@@ -4,3 +4,130 @@ body {
         font-style: normal;
     
 }
+header{
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+/* navbar section********************************************************* */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid tomato;
+    
+}
+.navbar h3{
+    color: rgb(58, 58, 58);
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+.navbar h3 span{
+    display: none;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+.navbar ul li{
+    margin-left: 20px;
+    color: rgb(58, 58, 58);
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 600;
+}
+/* Banner section************************************************************* */
+.banner{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.banner-title {
+    width: 50%;
+}
+.banner-images{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.banner-images .banner-images-container{
+    width: 73%;
+  
+}
+.banner-images .banner-images-container img{
+    width: 100%;
+}
+.banner-title-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.banner-title-content p{
+    color: rgb(58, 58, 58);
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 600;    
+    margin: 0;
+}
+.banner-title-content button{
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 41px;
+    background: rgb(224, 44, 109);
+    padding: 10px 24px 10px 24px;
+
+}
+.banner-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.banner-title-content h1{
+    color: rgb(58, 58, 58);
+    font-family: Poppins;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width:576px) {
+    .navbar ul{
+        display: none;
+    }  
+    .navbar h3 span{
+        display: inline;
+    }
+    .navbar h3{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner-title {
+        width: 100%;
+        text-align: center;
+    }
+    .banner-images{
+        width: 100%;
+    }
+}
