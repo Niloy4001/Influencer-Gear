@@ -15,9 +15,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 20px;    
     border: 1px solid tomato;
-    
 }
 .navbar h3{
     color: rgb(58, 58, 58);
@@ -100,6 +99,19 @@ header{
     font-weight: 700;
     margin: 0;
 }
+.partnership{
+    max-width: 1110px;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+    align-items: center;
+ }
+ .partnership img{
+    width: 100%;
+ }
+
+
 
 
 .hide {
@@ -130,4 +142,45 @@ header{
     .banner-images{
         width: 100%;
     }
+    .partnership{
+        grid-template-columns:repeat(4, 1fr) ;
+        margin: 50px 0;
+    }
+    .partnership img {
+        width: 65%;
+    }
+
+ 
+}
+@media screen and (min-width:576px) and (max-width:992px){
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar ul{
+        flex-direction: column;
+        padding-left: 0;
+        text-align: center;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner-title {
+        width: 100%;
+        text-align: center;
+    }
+    .banner-images{
+        width: 100%;
+
+    }
+    .partnership{
+        grid-template-columns:repeat(4, 1fr) ;
+    }
+
+   
+}
+
+
+
+main{
+
 }
