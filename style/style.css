@@ -8,7 +8,7 @@ header{
     max-width: 1200px;
     height: auto;
     margin: 0 auto;
-    border: 1px solid black;
+   
 }
 /* navbar section********************************************************* */
 .navbar{
@@ -16,7 +16,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 20px;    
-    border: 1px solid tomato;
+
 }
 .navbar h3{
     color: rgb(58, 58, 58);
@@ -183,7 +183,6 @@ header{
 main{
     max-width: 1110px;
     margin: 0 auto;
-    border: 1px solid tomato;
    
 }
 
@@ -204,7 +203,6 @@ main{
 }
 .card{
     padding: 15px;
-    border: 1px solid red;
     border-radius: 5px;
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
     background: rgb(255, 255, 255);
@@ -270,7 +268,6 @@ main{
 .featured{
     width: 100%;
     margin: 100px 0;
-    border: 1px solid tomato;
     display: flex;
     gap: 8%;
 }
@@ -318,5 +315,57 @@ main{
         width: calc( 100% - 30px );
         padding: 0px 15px;
         text-align: center;
+    }
+}
+/* footer section****************************************************** */
+footer{
+    max-width: 1300px;
+    margin: 0 auto;
+    background: #0a0826;
+    padding: 30px 0px;
+    display: flex;
+    justify-content: center;
+}
+.footer-content{
+    width: 22%;
+    text-align: center;
+}
+.footer-content h5{
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 1.2rem;
+    font-weight: 700; 
+    margin: 10px 0px;   
+}
+.footer-content p{
+    color: rgb(217, 219, 225);
+    font-family: Manrope;
+    font-size: 0.8rem;
+    font-weight: 700; 
+    margin: 10px 0px;  
+}
+.footer-icon-container{
+    width: 70%;
+    display: grid;
+    margin: 20px auto;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+
+}
+.fa-brands{
+    color: white;    
+}
+@media screen and (max-width:576px) {
+    footer{
+        padding: 68px 50px;
+    }   
+    .footer-content{
+        width: 80%;
+    }
+}
+@media screen and (min-width:576px) and (max-width:992px) {
+  
+    .footer-content{
+        width: 50%;
     }
 }
