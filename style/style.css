@@ -99,6 +99,7 @@ header{
     font-weight: 700;
     margin: 0;
 }
+/* Partnership section style*************************************************************** */
 .partnership{
     max-width: 1110px;
     margin: 100px auto;
@@ -111,12 +112,10 @@ header{
     width: 100%;
  }
 
+/* collection section style**************************************************************** */
 
 
 
-.hide {
-    display: none;
-}
 
 @media screen and (max-width:576px) {
     .navbar ul{
@@ -182,5 +181,88 @@ header{
 
 
 main{
+    max-width: 1110px;
+    margin: 0 auto;
+    border: 1px solid tomato;
+   
+}
 
+/* collection section style************************************************************* */
+.collection{
+    max-width: 1047px;
+    margin: 0 auto;
+    background: #fafafa;
+   
+}
+.collection h3{
+    text-align: center;
+}
+.collection .card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 44px;
+}
+.card{
+    padding: 15px;
+    border: 1px solid red;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    background: rgb(255, 255, 255);
+}
+
+.card .img-container img{
+    width: 100%;
+}
+.card h5{
+    color: rgb(24, 25, 31);
+    font-family: Poppins;
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin: 0;
+}
+.card .price{
+    color: rgba(0, 0, 0, 0.87);
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 5px 0;
+}
+.card .checked{
+    color: rgb(251, 130, 0);
+}
+.card .rating{
+    color: rgb(94, 99, 102);
+    font-family: Roboto;
+    font-size: 0.87rem;
+    font-weight: 700;
+}
+.card .products-description{
+    color: rgb(120, 120, 133);
+    font-family: Inter;
+    font-size: 0.87rem;
+    font-weight: 700;
+}
+.collection .see-more{
+    display: flex;
+    justify-content: end;
+    margin-top: 50px;
+    color: rgba(224, 44, 109, 0.87);
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 700;
+}
+@media screen and (max-width:576px) {
+    .collection .card-container{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    } 
+    .collection .see-more{
+        margin-top: 32px;
+    }  
+}
+@media screen and (min-width:576px) and (max-width:992px) {
+    .collection .card-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 44px;
+    }   
 }
